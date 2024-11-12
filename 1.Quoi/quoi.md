@@ -24,3 +24,11 @@ Voici une liste de tâche que l'on à confiées à des ordinateurs :
 * **Une voiture radio commandé avance tant qu'elle n'à pas reçu le signal pour s'arréter**
 * **Je souhaite éteindre mes appareil pour économiser de l'energie, toutes les prises de ma maison sont donc pilotable par internet, j'éteins tous**
 * **j'ai un détecteur de niveau en haut de ma baignoire, tant que la baignoire n'est pas rempli, l'eau coule**
+
+
+# Quelques exemple d'accident de l'informatique 
+
+### Institut de recherche spatiale russe – 1988
+* ** 1,2 milliard d’euros (1,5 milliard de roubles de 1988)
+Ses panneaux solaires paralysés, la sonde Phobos 1 vida ses batteries puis devint un poids morts après seulement 26 jours de mission. Pourquoi ? Pour tenir le planning, une séquence de test avait été laissée dans le logiciel de la sonde, avec instruction de ne pas l’utiliser… ce qu’un technicien du centre spatial ignorait, visiblement.
+
