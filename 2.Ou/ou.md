@@ -19,7 +19,8 @@ Grâce à vos contact chez chaudierepresdechezvous.com vous avez réussi à obte
 
 au regard cette documentation, rédigez un script python qui permet de consultez la température d'une pièce de la maison en particulier
 
-```De quelle pièce de la maison souhaitez vous connaitre la temperature ?
+```
+   De quelle pièce de la maison souhaitez vous connaitre la temperature ?
    Salle de bain
    Il fait XX dégré dans la salle de bain 
 ``` 
