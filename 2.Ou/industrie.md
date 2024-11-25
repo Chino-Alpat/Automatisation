@@ -1,5 +1,5 @@
 <!-- .slide: data-state="nologo-slide" style="text-align: center" -->
-#  Dans l'informatique
+#  Dans l'industrie
 
 * Tp pilotage d'une ligne de production 
 
@@ -11,34 +11,24 @@ cependant si c'est une utopie pour les petits animaux ça ne l'est pas pour les 
 
 
 ## Exercice 1
-En python, écrire un script qui permet d'ouvrir le fichier suivant: **film-de-michel.csv**,
-extraire les informations de ce fichier pour en faire un dictionnaire python au format suivant : 
+
+Votre ligne de production est relativement ancienne, mais heureusement elle est tous de même pilotable sommairement, via une connection ssh à l'adress suivante **ssh localhost -p 5050** , 
+voici la documentation des commandes réalisable sur la ligne : 
 ```
-{
-    "titre du film": {
-        "année": 2024,
-        "note": 2
-    },
-    "titre d'un autre film": {
-        "année": 2024,
-        "note": 4
-    }
-}
+show lines
+    affiche la liste des différentes ligne de production et leur statut
+lines X activate/deactivate
+    change le statut de la ligne de production, en l'activant ou en la désactivant
+show lines power consumption
+    affiche la consommation en énergie de chaque ligne de production 
 ```
 
-# TODO créer le fichier film-de-michel.csv
+**au regard de cette documentation, écrivez un script python permettant d'activez/désactivez une ligne de production donnée, et de vérifier son état** 
+
+
 
 ## Exercice 2
-En python, écrire un script qui permet d'ouvrir la page web suivante: **mes-film.html** sur le navigateur de votre choix, puis naviguez jusque la liste de vos films préférés, 
-extraire les informations de ce site pour en faire un dictionnaire python au même format que le précédent
-
-# TODO créer le site mes-film.html
-
 
 ## Exercice 3
-Maintenant que vous savez comment récupéré les informations de votre site **mes-film.html** et les informations du fichiers **film-de-michel.csv**, créer un script qui va faire ces deux actions successivement, 
-puis créer un fichier Json **critique-global.json** qui listera tous les films que vous et michel aurez vu **cette année** avec votre note, la note de michel, et la note moyenne du film.
 
-
-![michel et moi](images/michel_et_moi.webp "michel_et_moi") <!-- .element: width="100px" -->
 
