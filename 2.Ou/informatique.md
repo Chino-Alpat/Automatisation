@@ -28,13 +28,9 @@ extraire les informations de ce fichier pour en faire un dictionnaire python au 
 }
 ```
 
-# TODO créer le fichier film-de-michel.csv
-
 ## Exercice 2
 En python, écrire un script qui permet d'ouvrir la page web suivante: **mes-film.html** sur le navigateur de votre choix, puis naviguez jusque la liste de vos films préférés, 
 extraire les informations de ce site pour en faire un dictionnaire python au même format que le précédent
-
-# TODO créer le site mes-film.html
 
 
 ## Exercice 3
