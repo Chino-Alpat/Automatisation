@@ -34,14 +34,17 @@ Les consignes d'économie d'energie de 2077 sont claires : Article 422.1 - 4 : l
 cette énergie est récupérables sur des éoliennes fournies par le gouvernement, seulement voilà, la production de batterie ayant été stoppé en 2050 car jugée trop polluante cette energie ne peut pas être stocké,
 heureusement grâce à vos contact chez enedouze et chez meteo-fronce vous avez récupéré :
 
+le fichiers de référence du calcul de production d'energie selon la force du vent en MWh
 ```
     energie-eoliens.csv
       un fichier csv qui décris les puissances éléctrique obtenues selon la force du vent
 ```
+
 ainsi que les commandes API de météo-fronce permettant de récupéré la force du vent prévu pour une durée donnée, dans les régions bretonnes
 
 ```
-   /
+   /wind_force
+        renvoie la liste des force de vent pour les 30 prochaine seconde dans chaque régions
 ```
 
 ## Exercice 3
