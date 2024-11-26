@@ -46,6 +46,7 @@ ainsi que les commandes API de météo-fronce permettant de récupéré la force
    /wind_force
         renvoie la liste des force de vent pour les 30 prochaine seconde dans chaque régions
 ```
+**au regard de cette documentation, écrivez un script python permettant de récupéré la puissance qui sera généré par les éoliennes du trégor pour les 30 prochaine** 
 
 ## Exercice 3
 
