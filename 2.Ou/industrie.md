@@ -15,14 +15,17 @@ cependant si c'est une utopie pour les petits animaux ça ne l'est pas pour les 
 Votre ligne de production est relativement ancienne, mais heureusement elle est tous de même pilotable sommairement via une connection ssh à l'adresse suivante **ssh localhost -p 5050** , 
 voici la documentation des commandes réalisable sur la ligne : 
 ```
-show lines
-    affiche la liste des différentes ligne de production et leur statut
-lines X activate/deactivate
-    change le statut de la ligne de production, en l'activant ou en la désactivant
-show lines power consumption
-    affiche la consommation en énergie de chaque ligne de production
-production plant activate/deactivate
-    Allume ou éteint l'usine de production complète
+show all
+    liste les lignes de production dans l'usine
+show line -l (line name)
+    affiche le statut de la ligne de production (line name)
+activate line -u (line name)
+    change le statut de la ligne de production (line name), en l'activant
+deactivate line -u (line name)
+        change le statut de la ligne de production (line name), en la désactivant
+show line power consumption -l (line name)
+    affiche la consommation en énergie de la ligne de production (line name)
+
 ```
 
 **au regard de cette documentation, écrivez un script python permettant d'activez/désactivez une ligne de production donnée, et de vérifier son état (on/off)** 
