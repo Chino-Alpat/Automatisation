@@ -3,25 +3,13 @@
 
 * Plusieurs outils déja en place chez nos clients :
 
-![python](images/python.png "python") <!-- .element: width="100px" -->
-
-[<img src="images/python.png" width="30"/>](images/python.png)
-
-![robotframework](images/Robot-framework-logo.png "robotframework") <!-- .element: width="30px" -->
-
-![cucumber-logo](images/cucumber-logo.png "cucumber-logo") <!-- .element: width="100px" -->
-
-![APPIUM](images/APPIUM.png "APPIUM") <!-- .element: width="100px" -->
-
-![gitlab](images/gitlab.png "gitlab") <!-- .element: width="100px" -->
-
-![itest](images/itest.png "itest") <!-- .element: width="100px" -->
-
-![postman](images/postman.jpg "postman") <!-- .element: width="100px" -->
-
-![selenium](images/selenium.png "gitlab") <!-- .element: width="100px" -->
-
-![sikuli](images/sikuli.png "sikuli") <!-- .element: width="100px" -->
-
-![jenkins](images/jenkins.png "jenkins") <!-- .element: width="100px" -->
-
+[<img src="images/python.png" width="80"/>](images/python.png)
+[<img src="images/Robot-framework-logo.png" width="80"/>](images/Robot-framework-logo.png)
+[<img src="images/cucumber-logo.png" width="80"/>](images/cucumber-logo.png)
+[<img src="images/APPIUM.png" width="80"/>](images/APPIUM.png)
+[<img src="images/itest.png" width="80"/>](images/itest.png)
+[<img src="images/postman.jpg" width="80"/>](images/postman.jpg)
+[<img src="images/selenium.png" width="80"/>](images/selenium.png)
+[<img src="images/sikuli.png" width="80"/>](images/sikuli.png)
+[<img src="images/jenkins.png" width="80"/>](images/jenkins.png)
+[<img src="images/gitlab.png" width="80"/>](images/gitlab.png)
