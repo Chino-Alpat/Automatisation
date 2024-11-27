@@ -59,7 +59,8 @@ la période de noël approche et il vous faut produire les peluches suivantes : 
 **écrivez un script python qui permette de produire toutes ces peluches dans le moins de temps possible en utilisant l'energie éolienne** 
 * quelques précisions :
   * L'utilisation energique doit être loggué
-  * La force du vent doit être consulé toutes les 30 sec pour ajusté les lignes de production
+  * il faut 30sec pour produire une peluche lorsque la ligne de production est lancée
+  * La force du vent doit être consulé toutes les 30 sec pour ajuster les lignes de productions
   * On ne peut pas utiliser plus d'energie que celle qui est produite par la force du vent
   * la producton s'arrête une fois toutes les peluches créée
     
