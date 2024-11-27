@@ -12,7 +12,7 @@ cependant si c'est une utopie pour les petits animaux ça ne l'est pas pour les 
 
 ## Exercice 1
 
-Votre ligne de production est relativement ancienne, mais heureusement elle est tous de même pilotable sommairement via une connection ssh à l'adresse suivante **ssh localhost -p 5050** , 
+Votre ligne de production est relativement ancienne, mais heureusement elle est tous de même pilotable sommairement via la commande python suivante **plant.send_cmd("show all")**  , 
 voici la documentation des commandes réalisable sur la ligne : 
 ```
 show all
@@ -53,4 +53,15 @@ ainsi que les commandes API de météo-fronce permettant de récupéré la force
 
 ## Exercice 3
 
+Vous savez désormais piloter les lignes de production et récupérer les infos de météo fronce,
+la période de noël approche et il vous faut produire les peluches suivantes : 2 corgi, 3 akita, 1 mastiff tibétain,1 shiba et 2 husky
+
+**écrivez un script python qui permette de produire toutes ces peluches dans le moins de temps possible en utilisant l'energie éolienne** 
+* quelques précisions :
+  * L'utilisation energique doit être loggué
+  * La force du vent doit être consulé toutes les 30 sec pour ajusté les lignes de production
+  * On ne peut pas utiliser plus d'energie que celle qui est produite par la force du vent
+  * la producton s'arrête une fois toutes les peluches créée
+    
+![poti_chien_totale](images/poti_chien_totale.webp "poti_chien_totale") <!-- .element: width="100px" -->
 
