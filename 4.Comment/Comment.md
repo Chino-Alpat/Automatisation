@@ -5,6 +5,8 @@
 
 ![python](images/python.png "python") <!-- .element: width="100px" -->
 
+[<img src="images/python.png" width="30"/>](images/python.png)
+
 ![robotframework](images/Robot-framework-logo.png "robotframework") <!-- .element: width="30px" -->
 
 ![cucumber-logo](images/cucumber-logo.png "cucumber-logo") <!-- .element: width="100px" -->
