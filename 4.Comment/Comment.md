@@ -1,7 +1,7 @@
 <!-- .slide: data-state="nologo-slide" style="text-align: center" -->
 #  Comment met on en place l'automatisation ?
 
-* Plusieurs outils déja en place chez nos clients :
+* Plusieurs outils déjà en place chez nos clients :
 
 
 [<img src="images/python.png" width="160"/>](images/python.png)
