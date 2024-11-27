@@ -16,3 +16,14 @@
 \
 [<img src="images/jenkins.png" width="160"/>](images/jenkins.png)
 [<img src="images/gitlab.png" width="160"/>](images/gitlab.png)
+
+
+<!-- .slide: data-state="nologo-slide" style="text-align: center" -->
+
+## Présentation de POC 
+
+* Manipulation d'un téléphone via adb depuis une pipeline jenkins
+
+<!-- .slide: data-state="nologo-slide" style="text-align: center" -->
+
+* Manipulation d'une application lourde via la bibliothèque Uiautomator de python
