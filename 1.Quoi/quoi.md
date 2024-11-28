@@ -17,7 +17,7 @@
 ![histoire autom](images/ordi_bete_et_gentil.webp "histoire autom") <!-- .element: width="200px" -->
 
 <!-- .slide: data-state="nologo-slide" style="text-align: center" -->
-# Exercie de réflexion
+# Exercice de réflexion
 
 Comme évoquer précedemment, l'ordinateur est bête et gentil et effectue toujours les tâches qu'on lui confie.
 Voici une liste de tâche que l'on à confiées à des ordinateurs : 
