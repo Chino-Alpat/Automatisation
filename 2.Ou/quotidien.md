@@ -58,3 +58,5 @@ Vous savez désormais comment consultez la température d'une pièce en particul
 Maintenant qu'il vous est possible de connaitre les temperature de chaque pièces de votre maison, et de connaitre la liste des pièces ou il fait moins de X dégrés,
 vous souhaitez mettre en place un système automatique qui vérifie la température de chaque pièce toutes les 30 secondes, et qui si il fait plus de 20 degrés coupe le thermostat, et si il fait moins de 17 le rallume
 
+![cosy home](images/coasy_home.webp "cosy_home") <!-- .element: width="100px" -->
+
