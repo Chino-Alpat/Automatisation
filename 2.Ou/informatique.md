@@ -29,7 +29,7 @@ extraire les informations de ce fichier pour en faire un dictionnaire python au 
 ```
 
 ## Exercice 2
-En python, écrire un script qui permet d'ouvrir la page web suivante: **mes-film.html** sur le navigateur de votre choix, puis naviguez jusque la liste de vos films préférés, 
+En python, écrire un script qui permet d'ouvrir la page web suivante: **mon-site-cinema.html** sur le navigateur de votre choix, puis naviguez jusque la liste de vos films préférés, 
 extraire les informations de ce site pour en faire un dictionnaire python au même format que le précédent
 
 
