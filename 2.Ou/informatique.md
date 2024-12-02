@@ -18,11 +18,11 @@ extraire les informations de ce fichier pour en faire un dictionnaire python au 
 ```
 {
     "titre du film": {
-        "année": 2024,
+        "réalisateur": "xxxx",
         "note": 2
     },
     "titre d'un autre film": {
-        "année": 2024,
+       "réalisateur": "xxxx",
         "note": 4
     }
 }
@@ -35,7 +35,7 @@ extraire les informations de ce site pour en faire un dictionnaire python au mê
 
 ## Exercice 3
 Maintenant que vous savez comment récupéré les informations de votre site **mes-film.html** et les informations du fichiers **film-de-michel.csv**, créer un script qui va faire ces deux actions successivement, 
-puis créer un fichier Json **critique-global.json** qui listera tous les films que vous et michel aurez vu **cette année** avec votre note, la note de michel, et la note moyenne du film.
+puis créer un fichier Json **critique-global.json** qui listera tous les films que vous et michel aurez vu avec votre note, la note de michel, et la note moyenne du film.
 
 
 ![michel et moi](images/michel_et_moi.webp "michel_et_moi") <!-- .element: width="100px" -->
