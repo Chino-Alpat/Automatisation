@@ -1,0 +1,7 @@
+ vars:
+  plant_status: 'True'
+  corgi: 'False'
+  akita: 'False'
+  shiba: 'False'
+  tibetan_mastiff: 'False'
+  husky: 'False'

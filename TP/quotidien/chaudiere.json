@@ -1,0 +1,263 @@
+{
+  "uuid": "b9c06821-2bce-4371-a144-8102492f3340",
+  "lastMigration": 33,
+  "name": "chaudiere",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "0ab7394a-8baf-4b1b-962c-9b661faf8f3b",
+      "type": "crud",
+      "documentation": "",
+      "method": "",
+      "endpoint": "thermostat_list",
+      "responses": [
+        {
+          "uuid": "d7b66de1-ee0f-4edb-a1d3-9b4309af7018",
+          "body": "{}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "DATABUCKET",
+          "filePath": "",
+          "databucketID": "cix6",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "ad89066d-33eb-4484-83a4-55f7232d41f5",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "thermostat_temp",
+      "responses": [
+        {
+          "uuid": "be41d11e-8ae4-4ca8-9740-99ff5b2c11b8",
+          "body": "\"Please precise a valid thermostat ID\"",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "id",
+              "value": "",
+              "invert": false,
+              "operator": "null"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "497a6fe8-0d16-4c2d-844b-5613b392e456",
+          "body": "[\r\n  {\r\n    \"id\": {{queryParamRaw 'id'}},\r\n    \"temperature\": {{faker 'number.int' min=12 max=32}}\r\n  }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "id",
+              "value": "[1-7]",
+              "invert": false,
+              "operator": "regex"
+            }
+          ],
+          "rulesOperator": "AND",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    },
+    {
+      "uuid": "c38d9014-4ba3-430d-8b00-d2e6a5c04a1f",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "thermostat_toggle",
+      "responses": [
+        {
+          "uuid": "ede743ff-a4f9-42d0-9751-125ce53ee0e5",
+          "body": "\"Please precise a valid thermostat ID and setting ON or OFF\"",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "id",
+              "value": "",
+              "invert": false,
+              "operator": "null"
+            },
+            {
+              "target": "query",
+              "modifier": "set",
+              "value": "",
+              "invert": false,
+              "operator": "null"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        },
+        {
+          "uuid": "b502a496-d9d2-46cf-bb3f-7192f1470728",
+          "body": "[\r\n  {{queryParamRaw 'id'}} is now set to {{queryParamRaw 'set'}}\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [
+            {
+              "target": "query",
+              "modifier": "id",
+              "value": "[1-7]",
+              "invert": false,
+              "operator": "regex"
+            },
+            {
+              "target": "query",
+              "modifier": "set",
+              "value": "(ON)|(OFF)",
+              "invert": false,
+              "operator": "equals"
+            }
+          ],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": false,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "0ab7394a-8baf-4b1b-962c-9b661faf8f3b"
+    },
+    {
+      "type": "route",
+      "uuid": "ad89066d-33eb-4484-83a4-55f7232d41f5"
+    },
+    {
+      "type": "route",
+      "uuid": "c38d9014-4ba3-430d-8b00-d2e6a5c04a1f"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [
+    {
+      "uuid": "f6b3f13c-ad6f-4a62-9730-270d5846acd6",
+      "id": "f551",
+      "name": "Users",
+      "documentation": "",
+      "value": "[\n  {{#repeat 50}}\n  {\n    \"id\": \"{{faker 'string.uuid'}}\",\n    \"username\": \"{{faker 'internet.userName'}}\"\n  }\n  {{/repeat}}\n]"
+    },
+    {
+      "uuid": "95a9227e-1940-4947-91e5-29420068b266",
+      "id": "cix6",
+      "name": "heater",
+      "documentation": "",
+      "value": "[\n  {{#repeat 7}}\n  {\n    \"id\": {{@index}},\n    \"sid\": \"{{faker 'string.uuid'}}\",\n    \"name\": \"{{faker 'helpers.arrayElement' (array 'salle de bains' 'chambre' 'salon' 'chambre amis' 'entrée' 'véranda' 'grenier')}}\"\n  }\n  {{/repeat}}\n]"
+    }
+  ],
+  "callbacks": []
+}

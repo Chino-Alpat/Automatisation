@@ -1,0 +1,94 @@
+{
+  "uuid": "f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3",
+  "lastMigration": 33,
+  "name": "meteo",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "a3560648-8518-4e97-9097-f12a7c2bb507",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "wind_force",
+      "responses": [
+        {
+          "uuid": "5c5b9828-a099-4767-b9a7-041220c5ec01",
+          "body": "[\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"beaufort\": {{faker 'number.int' min=0 max=12}},\r\n    \"region\": \"finistere\"\r\n    \r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"beaufort\": {{faker 'number.int' min=0 max=12}},\r\n    \"region\": \"morbihan\"\r\n    \r\n  },\r\n  {\r\n    \"id\": \"{{faker 'string.uuid'}}\",\r\n    \"beaufort\": {{faker 'number.int' min=0 max=12}},\r\n    \"region\": \"cote armor\"\r\n    \r\n  }\r\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "a3560648-8518-4e97-9097-f12a7c2bb507"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

@@ -1,0 +1,8 @@
+{"app":"mockoon-desktop","level":"info","message":"[RENDERER][COMPONENT][APP] Initializing application","timestamp":"2024-11-27T08:43:32.165Z"}
+{"app":"mockoon-desktop","level":"info","message":"[RENDERER][SERVICE][ENVIRONMENTS] First load, creating demo environment","timestamp":"2024-11-27T08:43:32.238Z"}
+{"app":"mockoon-desktop","level":"info","message":"[MAIN][UPDATE] Application is up to date","timestamp":"2024-11-27T08:43:33.705Z"}
+{"app":"mockoon-server","environmentName":"meteo","environmentUUID":"f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3","level":"info","message":"Server started on port 3002","timestamp":"2024-11-27T08:45:23.391Z"}
+{"app":"mockoon-server","environmentName":"meteo","environmentUUID":"f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3","level":"info","message":"Transaction recorded","requestMethod":"GET","requestPath":"/win_force","requestProxied":false,"responseStatus":404,"timestamp":"2024-11-27T08:45:49.556Z"}
+{"app":"mockoon-server","environmentName":"meteo","environmentUUID":"f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3","level":"info","message":"Transaction recorded","requestMethod":"GET","requestPath":"/wind_force","requestProxied":false,"responseStatus":200,"timestamp":"2024-11-27T08:45:52.148Z"}
+{"app":"mockoon-server","environmentName":"meteo","environmentUUID":"f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3","level":"info","message":"Transaction recorded","requestMethod":"GET","requestPath":"/wind_force","requestProxied":false,"responseStatus":200,"timestamp":"2024-11-27T08:49:57.613Z"}
+{"app":"mockoon-server","environmentName":"meteo","environmentUUID":"f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3","level":"info","message":"Server stopped","timestamp":"2024-11-27T08:56:11.373Z"}

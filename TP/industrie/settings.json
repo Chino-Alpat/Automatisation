@@ -1,0 +1,46 @@
+{
+  "welcomeShown": true,
+  "bannerDismissed": [],
+  "maxLogsPerEnvironment": 100,
+  "truncateRouteName": true,
+  "mainMenuSize": 160,
+  "secondaryMenuSize": 309,
+  "fakerLocale": "en",
+  "fakerSeed": null,
+  "lastChangelog": "9.0.0",
+  "environments": [
+    {
+      "uuid": "aa2b5223-423d-484b-bca6-acfc45190aef",
+      "path": "D:\\Users\\leo.sarreau\\Downloads\\mockoon-data\\storage\\settings.json"
+    },
+    {
+      "uuid": "b9c06821-2bce-4371-a144-8102492f3340",
+      "path": "D:\\Users\\leo.sarreau\\Downloads\\mockoon-data\\storage\\chaudiere.json"
+    },
+    {
+      "uuid": "f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3",
+      "path": "D:\\Users\\leo.sarreau\\Downloads\\mockoon-data\\storage\\meteo-fronce.json",
+      "cloud": false,
+      "lastServerHash": null
+    }
+  ],
+  "disabledRoutes": {},
+  "collapsedFolders": {},
+  "enableTelemetry": true,
+  "storagePrettyPrint": true,
+  "fileWatcherEnabled": "disabled",
+  "dialogWorkingDir": "D:\\Users\\leo.sarreau\\Downloads\\mockoon-data\\storage",
+  "startEnvironmentsOnLoad": false,
+  "logTransactions": false,
+  "environmentsCategoriesOrder": [
+    "local",
+    "cloud"
+  ],
+  "environmentsCategoriesCollapsed": {
+    "local": false,
+    "cloud": false
+  },
+  "envVarsPrefix": "MOCKOON_",
+  "activeEnvironmentUuid": "f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3",
+  "enableRandomLatency": false
+}

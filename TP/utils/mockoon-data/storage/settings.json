@@ -1,0 +1,46 @@
+{
+  "welcomeShown": true,
+  "bannerDismissed": [],
+  "maxLogsPerEnvironment": 100,
+  "truncateRouteName": true,
+  "mainMenuSize": 201,
+  "secondaryMenuSize": 200,
+  "fakerLocale": "en",
+  "fakerSeed": null,
+  "lastChangelog": "9.0.0",
+  "environments": [
+    {
+      "uuid": "69af4a54-bc6a-421c-9a4b-a02bb98c331f",
+      "path": "D:\\Users\\leo.sarreau\\Desktop\\formation\\automatisation de test\\TP\\utils\\mockoon-data\\storage\\demo.json",
+      "cloud": false,
+      "lastServerHash": null
+    },
+    {
+      "uuid": "b9c06821-2bce-4371-a144-8102492f3340",
+      "path": "D:\\Users\\leo.sarreau\\Desktop\\formation\\automatisation de test\\TP\\quotidien\\chaudiere.json"
+    },
+    {
+      "uuid": "f8a40ec1-c1f9-4ad5-9a05-ba8de07dc8e3",
+      "path": "D:\\Users\\leo.sarreau\\Desktop\\formation\\automatisation de test\\TP\\industrie\\meteo-fronce.json"
+    }
+  ],
+  "disabledRoutes": {},
+  "collapsedFolders": {},
+  "enableTelemetry": true,
+  "storagePrettyPrint": true,
+  "fileWatcherEnabled": "disabled",
+  "dialogWorkingDir": "D:\\Users\\leo.sarreau\\Desktop\\formation\\automatisation de test\\TP\\industrie",
+  "startEnvironmentsOnLoad": false,
+  "logTransactions": false,
+  "environmentsCategoriesOrder": [
+    "local",
+    "cloud"
+  ],
+  "environmentsCategoriesCollapsed": {
+    "local": false,
+    "cloud": false
+  },
+  "envVarsPrefix": "MOCKOON_",
+  "activeEnvironmentUuid": "b9c06821-2bce-4371-a144-8102492f3340",
+  "enableRandomLatency": false
+}

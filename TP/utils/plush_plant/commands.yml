@@ -1,0 +1,63 @@
+initial_state:
+  _host: "PRODUCTION_PLANT#"
+  vars:
+    plant_status: 'True'
+    corgi: 'False'
+    akita: 'False'
+    shiba: 'False'
+    tibetan_mastiff: 'False'
+    husky: 'False'
+
+commands:
+ - command: term shell
+   stdout: "pouet"
+   returncode: 0
+ - command: terminal length 0
+   stdout: ""
+   returncode: 0
+ - command: exec echo.*
+   stdout_template: "{{command[9:]|trim|trim('''')|trim('\"')}}"
+   returncode: 0
+ - command: enable
+   stdout: "Password:"
+   modify_host: HOSTTTTTT#
+   returncode: 0
+ - command: show users
+   stdout: "    Line       User       Host(s)              Idle       Location\n*  1 vty 0     rootuser   idle                 00:00:00\n                                                        example.test.de\n\n  Interface    User               Mode         Idle     Peer Address\n\n"
+   returncode: 0
+ - command: show all
+   stdout: "corgi akita shiba tibetan_mastiff husky"
+ - command: show line -l
+   stdout: " lines                      Status         plush_size         Description "
+   options:
+    - corgi: " corgi                      {{vars(corgi)}}            small               cute "
+    - akita: " akita                      {{vars(akita)}}             big               perfect "
+    - shiba: " shiba                      {{vars(shiba)}}             mid               stubborn "
+    - tibetan_mastiff: " tibetan_mastiff                      {{vars(tibetan_mastiff)}}             very_big               fluffy "
+    - husky: " husky                      {{vars(husky)}}             big               wolf "
+ - command: show line power consumption -l
+   stdout: " lines                      power consumption "
+   options:
+     - corgi: " corgi                      5mWh"
+     - akita: " akita                      10mWh"
+     - shiba: " shiba                      5mWh"
+     - tibetan_mastiff: " tibetan_mastiff                      15mWh"
+     - husky: " husky                      10mWh"
+ - command: config terminal
+   stdout: ""
+ - command: interface\s(.*)
+   stdout: ""
+   update_state:
+     "{{match.group(1)}}": "{{(vars[match.group(1)] == 'True') is false}}"
+ - command: activate line -u
+   stdout: "Activating line"
+   update: "True"
+ - command: deactivate line -u
+   stdout: "De-Activating line"
+   update: "False"
+ - command: shutdown
+   stdout: ""
+ - command: no shutdown
+   stdout: ""
+ - command: end
+   stdout: ""
