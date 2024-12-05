@@ -28,7 +28,7 @@ GET
 GET
   /thermostat_toggle
       query parameter : id=X, set=ON or OFF
-      retourne la temperature relevé au thermostat X
+      modifie l'état du thermosatat X vers set
 ```
 
 **au regard cette documentation, rédigez un script python qui permet de consultez la température d'une pièce de la maison en particulier**
